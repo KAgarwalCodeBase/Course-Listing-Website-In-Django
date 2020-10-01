@@ -1,0 +1,13 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="Codechef_July_LC_Div2.chefina_and_swaps.testInput" />
+          <option value="Codechef_July_LC_Div2.doctor_chef.*" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
