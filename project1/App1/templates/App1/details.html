@@ -8,6 +8,12 @@
 {%if course.pk is 1%}
 <h1><a href="https://www.javatpoint.com">{{course.coursename}}</a></h1>
 <h2>{{course.insname}}</h2>
+<ul>
+    {%for x in Allcourses.set.all%}
+    <li>{{x.ct}}</li>
+    {% endfor %}
+
+</ul>
 {%elif course.pk is 2%}
 <h1><a href="https://www.javatpoint.com">{{course.coursename}}</a></h1>
 <h2>{{course.insname}}</h2>
@@ -16,5 +22,18 @@ elif course.pk is 3%}
 <h2>{{course.insname}}</h2>
 {%endif%}
 
+{%if error_message%}
+<p><strong>{{error_message}}</strong></p>
+{%endif%}
+<form action="{%url 'App1:yourchoice' course.id%}" method="POST">
+    {% csrf_token%}
+    {% for choice in course.details_set.all %}
+     <input type="radio" name = "choice" id="choice{%forloop.counter%}" value="{{course.id}}">
+     <label for="choice{%forloop.counter%}">{{choice.ct}}</label><br>
+    {%endfor%}
+
+    <input type="submit" value = "Submit">
+
+</form>
 </body>
 </html>

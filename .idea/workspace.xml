@@ -11,6 +11,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -20,6 +21,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -33,5 +35,19 @@
       <updated>1601525552294</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="363" y="174" width="630" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601566654849">
+      <screen x="0" y="27" width="1366" height="691" />
+    </state>
+    <state x="363" y="174" width="630" height="403" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1366.691@0.27.1366.691" timestamp="1601566654849" />
+    <state x="464" y="27" width="620" height="691" key="find.popup" timestamp="1601555429818">
+      <screen x="0" y="27" width="1366" height="691" />
+    </state>
+    <state x="464" y="27" width="620" height="691" key="find.popup/0.27.1366.691@0.27.1366.691" timestamp="1601555429818" />
+    <state x="700" y="39" width="672" height="678" key="search.everywhere.popup" timestamp="1601554338869">
+      <screen x="0" y="27" width="1366" height="691" />
+    </state>
+    <state x="700" y="39" width="672" height="678" key="search.everywhere.popup/0.27.1366.691@0.27.1366.691" timestamp="1601554338869" />
   </component>
 </project>

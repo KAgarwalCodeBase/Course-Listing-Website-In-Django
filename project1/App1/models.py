@@ -9,7 +9,8 @@ class Allcourses(models.Model):
     def __str__(self):
         return self.coursename
     def was_published_recently(self):
-        return self.startedfrom >= timezone.now() -  datetime.timedelta(days=1)
+        now = timezone.now()
+        return now-datetime.timedelta(days=1)<=self.startedfrom<=now
 
 class details(models.Model):
     #when we deleted any course from Allcourses class then it automatically deleted its details from details class
@@ -18,4 +19,3 @@ class details(models.Model):
     your_choice = models.BooleanField(default=False)
     def __str__(self):
         return str(self.ct)
-
